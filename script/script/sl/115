@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+
+i=1;
+
+while [ $i -le 30 ];
+do
+cp -f --no-preserve=mode /home/vova/foto/`head -$i /home/vova/script/sl/per` /home/vova/script/sl/f/`head -1 /home/vova/script/sl/1`$i.jpg
+i=$[$i+1];
+done
+
+
+
+
+

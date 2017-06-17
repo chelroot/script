@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+
+cat /dev/ttyACM0 > q.txt &
+usleep 1000
+echo -n q  > /dev/ttyACM0
+usleep 100000
+cat q.txt > qq.txt
+usleep 1000
+ps -ax | grep cat |grep  /dev/ttyACM  > c.txt;kill `head -c6 c.txt`
+usleep 10
+ps -ax | grep cat |grep  /dev/ttyACM  > c.txt;kill `head -c6 c.txt`
+
+
+echo вывод q завершен
+

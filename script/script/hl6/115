@@ -1,0 +1,24 @@
+#!/bin/bash
+
+
+
+
+
+for i in  Q q a W w s E e d R r f T t g Y y h U u j I i k O o l P p L Q W E R T Y U I O P q w e r t y u i o p a s d f g h j k L Q W E R T Y U I O P a s d f g h j k L
+
+do
+
+    if
+    ping -c 1 172.16.5.1  >> /dev/null
+    then
+    echo $i
+    echo  $i > /dev/ttyACM0
+usleep 700000
+
+    else
+    echo "что то не так"
+    echo  $i >k.txt
+
+    fi
+
+done

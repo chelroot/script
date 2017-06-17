@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+
+head /dev/ttyACM0 >h &
+
+sleep 3
+echo "#"
+echo -n "Q" > /dev/ttyACM0
+
+sleep 1
+echo "##"
+killall head
+
+echo вывод q1 завершен

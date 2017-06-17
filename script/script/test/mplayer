@@ -1,0 +1,27 @@
+#!/bin/bash
+
+y=1
+
+while [ $y -le 59 ]
+
+do echo -n $y
+
+
+    if
+	ping -c 1  10.0.0.$y | grep bytes >> /dev/null
+    then
+#	ping -c 1 10.0.0.$y | grep bytes >>a10y.txt
+	echo $y "zanyit"
+    else
+
+echo "$y"
+
+#`head -1 mpl`
+#>> /home/vova/aa/$y
+
+    fi
+
+
+i=$[$y+1]
+
+done

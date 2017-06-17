@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DATE=`date '+%d'.'%m'`
+echo $DATE
+LL=`date  +"%Y-%m-%d" --date="-2 hour"`
+echo $LL
+V=`date '+%H'`
+echo $V
+VV=`date '+%H' --date="-2 hour"`:00
+echo $VV
+VVV=`date '+%H' --date="-1 hour"`:00
+
+echo $VVV

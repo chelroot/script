@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+
+while [ 1 = 1 ]
+do
+(( count++ ))
+/home/vova/script/hl6/11
+##cat /dev/ttyACM0 >kk.txt
+echo $count
+usleep 10000
+done

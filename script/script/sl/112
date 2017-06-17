@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+
+i=5;
+
+while [ $i -le 9 ];
+do
+ls /home/vova/foto/0$i | sort -r >/home/vova/script/sl/per
+cp -f --no-preserve=mode /home/vova/foto/0$i/`head -1 /home/vova/script/sl/per` /home/vova/script/sl/f/$i.jpg
+cp -f --no-preserve=mode /home/vova/foto/0$i/`head -2 /home/vova/script/sl/per` /home/vova/script/sl/f/$i.jpg
+cp -f --no-preserve=mode /home/vova/foto/0$i/`head -3 /home/vova/script/sl/per` /home/vova/script/sl/f/$i.jpg
+i=$[$i+1];
+done
+

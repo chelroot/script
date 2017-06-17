@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Refresh" content="10">
+  <title>Test</title>
+</head>
+<body>
+
+  <div class="header row"> 
+
+    <div class="coll left"> 
+      <a href="http://site.camera" target="_blank">site.camera</a>
+    </div> 
+
+    <div class="coll right"> 
+      <a href="http://site.camera/shop/my/" target="_blank">Личный кабинет</a>
+    </div> 
+
+  </div> 
+
+
+  <div class="container"> 
+
+    <div class="row"> 
+
+      <p>Автоматическое обновление каждые 10 секунд. Нажмите на камеру для отдельного просмотра.</p>
+
+    </div> 
+
+
+    <div class="row"> 
+
+      <a class="coll" target="_blank" href="http://f1.site.camera/19-5/19-5.jpg"> 
+        <img src="http://f1.site.camera/19-5/19-5.jpg" alt="Стройка"> 
+      </a> 
+
+      <a class="coll" target="_blank" href="http://f1.site.camera/19-4/19-4.jpg"> 
+        <img src="http://f1.site.camera/19-4/19-4.jpg" alt="Стройка"> 
+      </a> 
+
+    </div> 
+
+
+    <div class="row"> 
+
+      <a class="coll" target="_blank" href="http://f1.site.camera/19-6/19-6.jpg"> 
+        <img src="http://f1.site.camera/19-6/19-6.jpg" alt="Стройка"> 
+      </a> 
+
+      <a class="coll" target="_blank" href="http://f1.site.camera/19-2/19-2.jpg"> 
+        <img src="http://f1.site.camera/19-2/19-2.jpg" alt="Стройка"> 
+      </a> 
+
+    </div> 
+
+  </div> 
+
+
+  <div class="footer"> 
+
+    <div class="container"> 
+      <a href="http://site.camera" target="_blank" rel="nofollow">site.camera</a> 
+    </div>
+
+  </div>
+
+<style> /* CSS стили */
+body, html, * { font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 14px; margin: 0; padding: 0;}
+.header{ height: 60px;}
+.header a{ color: #FFFFFF; display: block; line-height: 60px; text-align: right; text-decoration: none; width: 50%;}
+.header .left a{ font-size: 24px; font-weight: 600;}
+.header .right a{ font-size: 18px;}
+.header .right a:hover{ color: #E6DD00;}
+.header > .left{ background: #00A7F0;}
+.header > .right{ background: #006BC2;}
+.container { display: block; margin: 0 auto; width: 980px;}
+.row{ display: block; text-align: center; width: 100%;}
+.row::after{ clear:both; content: ""; position: relative;}
+.coll{ display: inline-block; vertical-align: top; width: 50%;}
+.coll:first-child{ margin-right: -4px;}
+.row p, .row span{ font-size: 16px; margin-bottom: 15px; margin-top: 5px;}
+.row a { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 3px 5px;}
+.row img{ max-width: 100%;}
+.footer{ background: #00A7F0;}
+.footer a { color: #ffffff; font-size: 24px; font-weight: 600; line-height: 60px; margin: 0 auto; text-decoration: none;}
+</style>
+</body>
+</html>

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+DATE6=`date '+%d'.'%m' --date="-6 day"`
+DATE5=`date '+%d'.'%m' --date="-5 day"`
+DATE4=`date '+%d'.'%m' --date="-4 day"`
+DATE3=`date '+%d'.'%m' --date="-3 day"`
+DATE2=`date '+%d'.'%m' --date="-2 day"`
+DATE1=`date '+%d'.'%m' --date="-1 day"`
+DATE=`date '+%d'.'%m'`
+
+
+
+#<a href=09.12>09.12</a><br />
+#<a href=10.12>10.12</a><br />
+
+
+echo "<a href=$DATE6/$DATE6</a><br />" #>> /var/www/html/foto/sk1/ind.html
+echo "<a href=$DATE5/$DATE5</a><br />" #>> /var/www/html/foto/sk1/ind.html
+echo "<a href=$DATE4/$DATE4</a><br />" #>> /var/www/html/foto/sk1/ind.html
+echo "<a href=$DATE3/$DATE3</a><br />" #>> /var/www/html/foto/sk1/ind.html
+echo "<a href=$DATE2/$DATE2</a><br />" #>> /var/www/html/foto/sk1/ind.html
+echo "<a href=$DATE1/$DATE1</a><br />" #>> /var/www/html/foto/sk1/ind.html
+echo "<a href=$DATE/$DATE</a><br />" #>> /var/www/html/foto/sk1/ind.html
+

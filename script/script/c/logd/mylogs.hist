@@ -1,0 +1,37 @@
+16.08.2012
+==========
+
+bash-4.2$ make
+cc     mylogs.c   -o mylogs
+
+
+bash-4.2$ ./mylogs
+done: log. level = 0
+done: log. level = 1
+done: log. level = 2
+done: log. level = 3
+done: log. level = 4
+done: log. level = 5
+done: log. level = 6
+done: log. level = 7
+
+
+bash-4.2$ sudo cat /var/log/messages | tail -n7
+Aug 16 18:30:12 notebook ./mylogs: log. level = 0
+Aug 16 18:30:12 notebook ./mylogs: log. level = 1
+Aug 16 18:30:12 notebook ./mylogs: log. level = 2
+Aug 16 18:30:12 notebook ./mylogs: log. level = 3
+Aug 16 18:30:12 notebook ./mylogs: log. level = 4
+Aug 16 18:30:12 notebook ./mylogs: log. level = 5
+Aug 16 18:30:12 notebook ./mylogs: log. level = 6
+
+
+
+bash-4.2$ sudo systemctl status rsyslog.service
+rsyslog.service - System Logging Service
+      Loaded: loaded (/usr/lib/systemd/system/rsyslog.service; enabled)
+      Active: active (running) since Thu, 16 Aug 2012 21:34:28 +0300; 1h 43min ago
+    Main PID: 676 (rsyslogd)
+      CGroup: name=systemd:/system/rsyslog.service
+	  └ 676 /sbin/rsyslogd -n -c 5
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+i=19-5/19-5.jpg
+
+
+echo '<a class="coll" target="_blank" href="$i"><img src="""http://f1.site.camera/19-5/19-5.jpg""" alt="Стройка">'   >> /home/vova/script/site/mon1.html
+
+
+
+

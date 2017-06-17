@@ -1,0 +1,36 @@
+#!/bin/bash
+
+
+##/usr/bin/picocom /dev/ttyACM0 -b 9600 -l >> /dev/null  &
+nohup picocom /dev/ttyACM0 -b 9600 -l &
+cat /dev/ttyACM0 &
+
+cat /dev/ttyACM0 >  w.txt &
+usleep 100
+echo w > /dev/ttyACM0
+sleep 1
+usleep 100000
+cat w.txt
+usleep 1000
+sleep 2
+
+#killall cat
+
+echo вывод w завершен
+
+
+nohup picocom /dev/ttyACM0 -b 9600 -l &
+cat /dev/ttyACM0 &
+
+cat /dev/ttyACM0 >  w.txt &
+usleep 100
+echo W > /dev/ttyACM0
+sleep 1
+usleep 100000
+cat w.txt
+usleep 1000
+sleep 2
+
+killall cat
+
+echo вывод w завершен

@@ -1,0 +1,9 @@
+https://github.com/Mekire/pygame-samples
+
+http://pygame.org/tags/example
+
+http://programarcadegames.com/?chapter=example_code
+
+http://docs.peewee-orm.com/en/latest/peewee/playhouse.html
+
+https://github.com/amoffat/sh

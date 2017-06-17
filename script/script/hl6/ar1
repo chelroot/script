@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+
+
+
+
+if
+    head -c1 /home/vova/script/hl6/a.txt| grep q >> /dev/null
+    then
+    echo -n  `head -c1 /home/vova/script/hl6/a.txt` > /dev/ttyACM0
+    date >     /var/www/html/ard/date.txt
+    #date > /var/www/html/ard/ard.txt
+    echo "записана дата"
+    else
+    echo -n  `head -c1 /home/vova/script/hl6/a.txt` > /dev/ttyACM0
+
+    echo "переключен в другое состояние"
+
+    fi
+
+
+
+
+

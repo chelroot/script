@@ -1,0 +1,20 @@
+#!/bin/bash
+
+
+while [ 1 ]
+do
+(( count++ ))
+cat /dev/ttyACM0 >kk.txt &
+usleep 100
+echo -n  `head -c1 k.txt` > /dev/ttyACM0
+usleep 100
+cat kk.txt > k1.txt
+usleep 10
+ps -ax | grep cat |grep  /dev/ttyACM  > c.txt;kill `head -c6 c.txt`
+usleep 10
+ps -ax | grep cat |grep  /dev/ttyACM  > c.txt;kill `head -c6 c.txt`
+usleep 500000
+
+echo $count
+
+done

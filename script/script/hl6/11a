@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+
+
+
+for i in  Q q A a Q q A a Q q A a Q q A a
+do
+
+    if
+    ping -c 1 172.16.5.1  >> /dev/null
+    then
+    echo $i
+    echo  $i > /home/vova/script/hl6/a.txt
+usleep 50000
+
+    else
+    echo "что то не так"
+    echo  $i >k.txt
+
+    fi
+
+done

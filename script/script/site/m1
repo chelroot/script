@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Refresh" content="10">
+  <title>Test</title>
+</head>
+<body>
+
+  <div class="header row"> <!-- верхняя линия - начало -->
+
+    <div class="coll left"> <!-- coll - колонка, левый блок с ссылкой на сайт -->
+      <a href="http://site.camera" target="_blank">site.camera</a>
+    </div> <!-- конец колонки -->
+
+    <div class="coll right"> <!-- coll - колонка, правый блок с ссылкой на лк -->
+      <a href="http://site.camera/shop/my/" target="_blank">Личный кабинет</a>
+    </div> <!-- конец колонки -->
+
+  </div> <!-- верхняя линия - конец -->
+
+
+  <div class="container"> <!-- основной контент - начало, container - отцентрованный блок шириной 980px -->
+
+    <div class="row"> <!-- ряд -начало -->
+
+      <p>Автоматическое обновление каждые 10 секунд.</p>
+      <p>Нажмите на камеру для отдельного просмотра.</p>
+
+    </div> <!-- ряд -конец -->
+<div class="row">
+<a class="coll" target="_blank" href="

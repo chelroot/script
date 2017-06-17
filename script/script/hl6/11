@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+
+
+
+
+    if
+    ls /home/vova/script/hl6 | grep a.txt
+    then
+    head -2 /dev/ttyACM0 >> /home/vova/script/hl6/head.txt &
+usleep 100
+    echo -n  `head -c1 /home/vova/script/hl6/a.txt` > /dev/ttyACM0
+
+usleep 100
+    echo "послал букву"
+    rm -fr /home/vova/script/hl6/a.txt
+    date >> /home/vova/script/hl6/head.txt
+    killall head
+    else
+    echo "файла нет"
+
+
+    fi
+
+

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+i=1
+
+while [ $i -le 59 ]
+
+do #echo -n $i
+
+
+    if
+	arping2 -c 1  10.0.0.$i | grep bytes >> /dev/null
+    then
+	arping2 -c 1 10.0.0.$i | grep bytes >>a10y.txt
+	echo $i "zanyit"
+    else
+	head -1 113 >> /home/vova/script/test/1/c"$i"
+	
+	echo "i=$i" >> /home/vova/script/test/1/c"$i"
+	
+	head -66 mp >> /home/vova/script/test/1/c"$i"
+    fi
+
+
+i=$[$i+1]
+
+done

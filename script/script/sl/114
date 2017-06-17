@@ -1,0 +1,17 @@
+#!/bin/bash
+
+
+
+i=5;
+
+while [ $i -le 9 ];
+do
+ls /home/vova/foto/0$i | sort -r >/home/vova/script/sl/per
+
+echo $i > 1
+
+/home/vova/script/sl/115
+
+i=$[$i+1];
+done
+

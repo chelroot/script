@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+
+BLAH=`cat a.txt`
+for i in $BLAH
+do echo $i  >> a1.txt
+done

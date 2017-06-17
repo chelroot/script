@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+
+cp -f /var/log/proftpd/xfer.log  /root/log.txt
+echo -n > /var/log/proftpd/xfer.log
+
+
+
+for i in  `cat /root/userid.txt`
+
+do
+
+cat /root/log.txt |grep "$i" | grep jpg |tail -1 > /root/tail1.txt
+
+
+BLAH=`cat /root/tail1.txt`
+for ii in $BLAH
+do echo $ii  >> /root/a1.txt
+done
+
+cat /root/a1.txt | grep /home > /root/a2.txt
+
+rm -rf /root/a1.txt
+
+cp -f `cat /root/a2.txt` /var/www/html/foto/"$i".jpg
+
+convert `cat /root/a2.txt` -resize 240 /var/www/html/foto/"$i"a.jpg
+
+done

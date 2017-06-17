@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+for i in `cat 1.txt`
+
+
+do
+
+    if
+    ping -c 1 172.16.5.1  >> /dev/null
+    then
+    echo $i
+
+sleep 2
+
+    else
+    echo "что то не так"
+    #echo  $i >k.txt
+
+    fi
+
+done

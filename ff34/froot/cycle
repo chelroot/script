@@ -1,0 +1,25 @@
+#!/bin/bash
+
+killall cpp
+sleep 5
+killall cpp
+
+
+while [ 1 = 1 ]
+do
+(( count++ ))
+
+
+#date +"%S-%N">> /home/vit/f12/1cpp.txt
+/root/cpp    #>> /dev/null
+#date +"%S-%N">> /home/vit/f12/1cpp.txt
+
+
+echo $count
+#echo "###"
+#date
+
+
+
+sleep 5
+done

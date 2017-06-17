@@ -1,0 +1,31 @@
+[olej@notebook hello-prog]$ file a.out 
+a.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.9, not stripped
+
+
+
+[olej@notebook hello-prog]$ ./mgetopt  
+options value was:	d:0	t:0	v:0
+parameters was:
+
+[olej@notebook hello-prog]$ ./mgetopt  -t 3 -d2
+options value was:	d:2	t:3	v:0
+parameters was:
+
+[olej@notebook hello-prog]$ ./mgetopt  -s
+./mgetopt: invalid option -- 's'
+option must be: d:t:v
+options value was:	d:0	t:0	v:0
+parameters was:
+
+[olej@notebook hello-prog]$ ./mgetopt -vvv arg1
+options value was:	d:0	t:0	v:3
+parameters was:	<arg1>
+
+[olej@notebook hello-prog]$ ./mgetopt arg1 -vvv
+options value was:	d:0	t:0	v:3
+parameters was:	<arg1>
+
+[olej@notebook hello-prog]$ ./mgetopt -d 1 arg1 -t 2 arg2 -vvv
+options value was:	d:1	t:2	v:3
+parameters was:	<arg1>	<arg2>
+

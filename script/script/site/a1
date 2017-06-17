@@ -1,0 +1,9 @@
+#!/bin/bash
+
+paste /home/vova/script/site/m1 > /home/vova/script/site/mon.html
+
+
+paste /home/vova/script/site/m2 >> /home/vova/script/site/mon.html
+
+
+paste /home/vova/script/site/m3 >> /home/vova/script/site/mon.html

@@ -1,0 +1,80 @@
+    1  apt-get update
+    2  apt-get dist-upgrade
+    3  apt-get clean
+    4  update-kernel
+    5  apt-get remove tftp-server-xinetd tftpd lftp
+    6  apt-get install proftpd
+    7  apt-get install sensors-detect
+    8  service ntpd stop;ntpdate ntp0.zenon.net;service ntpd start
+    9  chkconfig lm_sensors on & /etc/init.d/lm_sensors start & while true; do clear; sensors | grep -E "(fan*|temp*)" 2>/dev/null;date +%H:%M:%S; sleep 5m; done
+   10  sensors-detect
+   11  apt-get install ffmpeg
+   12  apt-get install ImageMagick nload nmap arping2
+   13  service bacula-fd stop
+   14  hkconfig bacula-fd off
+   15  chkconfig bacula-fd off
+   16  exit
+   17  history 
+   18  apt-get install htop
+   19  exit
+   20  [<65;80;20M
+   21  ./resolv.conf
+   22  apt-get install arping2
+   23  arping2 10.10.0.102
+   24  arping2 10.10.0.118
+   25  arping2 10.10.0.110
+   26  arping2 10.10.0.102
+   27  mc
+   28  hostname 
+   29  mc
+   30  service proftpd start
+   31  service proftpd restart
+   32  mc
+   33  service proftpd restart
+   34  mc
+   35  service httpd2 start
+   36  service httpd2 restart
+   37  mc
+   38  chown gg1.apache2 gg1
+   39  chmod g+rx gg1
+   40  exit
+   41  ./cycle
+   42  OA
+   43  mc
+   44  ./cycle 
+   45  mc
+   46  crontab -e 
+   47  crontab -l
+   48  mc
+   49  chown gg2.apache2 gg2
+   50  chmod g+rx gg2
+   51  chown gr1.apache2 gr1; chmod g+rx gr1
+   52  chown kk1.apache2 kk1; chmod g+rx kk1
+   53  chown kp1.apache2 kp1; chmod g+rx kp1
+   54  chown kp2.apache2 kp2; chmod g+rx kp2
+   55  chown kr1.apache2 kr1; chmod g+rx kr1
+   56  chown nm1.apache2 nm1; chmod g+rx nm1
+   57  chown os1.apache2 os1; chmod g+rx os1
+   58  chown sk1.apache2 sk1; chmod g+rx sk1
+   59  chown tb1.apache2 tb1; chmod g+rx tb1
+   60  chown vx1.apache2 vx1; chmod g+rx vx1
+   61  chown yg1.apache2 yg1; chmod g+rx yg1
+   62  mc
+   63  mc
+   64  service proftpd restart
+   65  mc
+   66  chown sk2.apache2 sk2; chmod g+rx sk2
+   67  mc
+   68  chown hw1.apache2 hw1; chmod g+rx hw1
+   69  chown hw2.apache2 hw2; chmod g+rx hw2
+   70  mc
+   71  mc
+   72  chown rv1.apache2 rv1; chmod g+rx rv1
+   73  chown rv2.apache2 rv2; chmod g+rx rv2
+   74  chown rv3.apache2 rv3; chmod g+rx rv3
+   75  chown rv4.apache2 rv4; chmod g+rx rv4
+   76  mc
+   77  mc
+   78  chown kk2.apache2 kk2; chmod g+rx kk2
+   79  mc
+   80  history > history.txt
