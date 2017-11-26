@@ -115,3 +115,44 @@ Serial.println();
   
 
 }
+
+
+Проверка
+// Подключаем библиотеку
+#include <QuadDisplay.h>
+
+// номер цифрового пина дисплея
+#define DISPLAY_PIN A0
+int val = 88;
+
+void setup()
+{
+}
+
+void loop()
+{
+  // можно показывать ведущие нули (0012)
+   if (val == 0)  {
+     displayInt(DISPLAY_PIN, val, true); 
+     delay(1000);
+ //    displayInt(DISPLAY_PIN,  true); 
+     displayClear(DISPLAY_PIN);
+ //    displayClear(); 
+ //    displayDigits(QD_O, QD_f, QD_f, QD_NONE); // off
+     delay(1000);}
+   else {
+       displayInt(DISPLAY_PIN, val, true);
+       delay(1000);
+       val = val -1; 
+      }
+   
+  
+//  displayInt(DISPLAY_PIN, val, true);
+//  delay(10);
+//  val = val -1;
+
+  
+}
+
+
+
