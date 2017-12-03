@@ -1,0 +1,10 @@
+Узнаем дааные усройства
+
+udevadm info -a -n ttyUSB0
+
+создаем файл
+[root@foto2 ~]# cat /etc/udev/rules.d/10-local.rules 
+nickname for /dev/ttyUSB0
+ATTRS{product}=="FT232R USB UART", ATTRS{serial}=="A50285BI", SUBSYSTEM=="tty", SYMLINK+="arduino485"
+
+Перегружаеммся
